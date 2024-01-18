@@ -1,1 +1,2 @@
-# Maps
+#Independent Learning Project - Maps
+
