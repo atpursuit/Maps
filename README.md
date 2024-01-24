@@ -37,7 +37,6 @@ Big O evaluation
 ----------------
 
 ````
-```
 
 // O(1) - Adding entries using 'set' individually
 favoriteColors.set('Alice', 'Blue');
@@ -58,7 +57,6 @@ console.log("Charlie's favorite color is " + charlieColor);
 
 // Overall time complexity: O(n), where n is the number of entries in the Map
 
-```
 ````
 
 
