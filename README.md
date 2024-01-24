@@ -10,7 +10,6 @@ Algorithm description
 Here we have the code:
 
 ````
-```
 
 // We use a 'Map' called 'favoriteColors' to store the favorite colors of Alice, Bob and Charlie.
 let favoriteColors = new Map();
@@ -32,7 +31,6 @@ console.log("Charlie's favorite color is " + charlieColor);
 
 // You're done! This is how we use the 'Map' function.
 
-```
 ````
 
 Big O evaluation
