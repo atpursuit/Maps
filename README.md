@@ -1,81 +1,81 @@
+````
 Independent Learning Project - Maps
+````
+
 
 Introduction
 ----------------
+.map () is a method of an Array. .map(), in Javascript is used to create a new array from calling a function for every array element.
 
-A map is just a set of key value pairs. Maps have a key and a value. (Remember:  A key in the Map is unique as that can only occur once! ) With maps, you can easily store, access, and iterate over data based on distinct keys, making them a versatile and widely used feature in JavaScript for handling collections of data.
+Here is a further breakdown of .map():
 
-Algorithm description
---------------------------
-Here we have the code:
-
-````
-
-// We use a 'Map' called 'favoriteColors' to store the favorite colors of Alice, Bob and Charlie.
-let favoriteColors = new Map();
-
-// Here we are using 'set' to add entries. Associating each color to a name.
-favoriteColors.set('Alice', 'Blue');
-favoriteColors.set('Bob', 'Green');
-favoriteColors.set('Charlie', 'Red');
-
-// Listed below is how we get and print the favorite colors of Alice, Bob and Charlie.
-let aliceColor = favoriteColors.get('Alice');
-console.log("Alice's favorite color is " + aliceColor);
-
-let bobColor = favoriteColors.get('Bob');
-console.log("Bob's favorite color is " + bobColor);
-
-let charlieColor = favoriteColors.get('Charlie');
-console.log("Charlie's favorite color is " + charlieColor);
-
-// You're done! This is how we use the 'Map' function.
+Syntax:
 
 ````
 
-Big O evaluation
+array.map(function(currentValue, index, arr), thisValue)
+
+````
+
+Parameters:
+
+function() - The function to be run.
+currentValue - The value of the current element.
+
+Index - The index of the element.
+arr - The array of the element.
+thisValue - Default value, undefined. 
+
+function() and currentValue are required. Index, arr, and thisValue are optional.
+
+
+Algorithm Description
+----------------
+Here is our code:
+
+````
+// Define an array of numbers
+const numbers = [1, 2, 3, 4, 5];
+
+// Use the map() function to create a new array where each element is doubled
+const doubledNumbers = numbers.map(num => num * 2);
+
+// Print the new array to the console
+console.log(doubledNumbers);
+
+````
+
+This is how we break it down.
+
+````
+// Define an array of numbers
+const numbers = [1, 2, 3, 4, 5];
+````
+This line creates a list of numbers.
+
+````
+const doubledNumbers = numbers.map(num => num * 2);
+````
+In this line we use the .map () function. The .map goes through this line of code and doubles it. The result is stored in ‘doubledNumbers’.
+
+
+````
+console.log(doubledNumbers);
+
+````
+In this line, the doubled numbers are displayed.
+
+Use Cases
 ----------------
 
-````
-
-// O(1) - Adding entries using 'set' individually
-favoriteColors.set('Alice', 'Blue');
-favoriteColors.set('Bob', 'Green');
-favoriteColors.set('Charlie', 'Red');
-
-// O(1) - Retrieving and printing Alice's favorite color
-let aliceColor = favoriteColors.get('Alice');
-console.log("Alice's favorite color is " + aliceColor);
-
-// O(1) - Retrieving and printing Bob's favorite color
-let bobColor = favoriteColors.get('Bob');
-console.log("Bob's favorite color is " + bobColor);
-
-// O(1) - Retrieving and printing Charlie's favorite color
-let charlieColor = favoriteColors.get('Charlie');
-console.log("Charlie's favorite color is " + charlieColor);
-
-// Overall time complexity: O(n), where n is the number of entries in the Map
-
-````
-
-
-Cases
-------
-
- The `map()` function in JavaScript helps us change each item in a list and create a new list with those new changes. For example, let’s say we have a list of numbers and we want to double them. You can use `map()` like this: `const doubledNumbers = originalNumbers.map(num => num * 2);`. This gives us a new list called `doubledNumbers`. The numbers from the previous list are now doubled!
-
-
-Edge Cases and Concerns
-------------------------
-
-While map is a very useful function, it may not be suitable for non-iterable objects. Also, if the callback function provided to map() has side effects or relies on external state, this might lead to unexpected issues within the code, so it's essential to ensure the proper use of this function to prevent the code from messing up.
+Edge cases and concerns
+----------------
 
 
 Citations
------------
-[Source](https://www.freecodecamp.org/news/how-to-use-javascript-map-method-to-make-a-breath-first-and-depth-first-search/)
+-------------
 
-[Source](https://www.youtube.com/watch?v=xNQH1NbZQ0E)
 
-[Source](https://www.freecodecamp.org/news/finding-your-way-with-map-aecb8ca038f6/)
+
+
+
