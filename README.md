@@ -1,7 +1,3 @@
-````
-Independent Learning Project - Maps
-````
-
 
 Introduction
 ----------------
@@ -34,13 +30,10 @@ Algorithm Description
 Here is our code:
 
 ````
-// Define an array of numbers
 const numbers = [1, 2, 3, 4, 5];
 
-// Use the map() function to create a new array where each element is doubled
 const doubledNumbers = numbers.map(num => num * 2);
 
-// Print the new array to the console
 console.log(doubledNumbers);
 
 ````
@@ -67,14 +60,14 @@ In this line, the doubled numbers are displayed.
 
 Use Cases
 ----------------
+.map() should be used in your code when you want to make a new array. 
 
-Edge cases and concerns
+Edge Cases and Concerns
 ----------------
-
+.map() shouldn’t be used
 
 Citations
 -------------
-
 
 
 
